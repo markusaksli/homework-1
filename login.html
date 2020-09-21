@@ -1,11 +1,45 @@
 <!DOCTYPE html>
 <html lang="en">
+
 <head>
     <meta charset="UTF-8">
     <link rel="stylesheet" href="login.css">
     <title>Welcome to the postIt! Please Log In</title>
 </head>
-<body>
 
+<body>
+    <section class="wrapper">
+        <div class="content">
+
+            <header>
+                <div class="image-container">
+                    <img src="note.png">
+                </div>
+                <div class="welcome-container">
+                    <h1>Welcome to postIt!</h1>
+                    <h3>Please Login!</h3>
+                </div>
+            </header>
+
+            <section>
+                <form class="login-form" action="index.html">
+                    <div class="input-group">
+                        <input type="email" placeholder="Email" id="email">
+                        <input type="password" placeholder="Password" id="password">
+                    </div>
+                    <div class="btn-group">
+                        <a href="index.html"><input type="submit" value="Log In"></a>
+                        <a href="index.html"><input type="button" value="Sign up"></a>
+                    </div>
+                </form>
+            </section>
+
+            <footer>
+                <a id="footer-link-pswrd" href="index.html" title="Forgot Password">Forgot Password?</a>
+            </footer>
+
+        </div>
+    </section>
 </body>
+
 </html>

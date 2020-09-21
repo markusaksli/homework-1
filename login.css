@@ -1,3 +1,135 @@
+@import url('https://fonts.googleapis.com/css?family=Nunito');
+
 body {
-    background-color: dodgerblue;
+	height: 100vh;
+	font-family: 'Nunito', sans-serif;
+	background-color: dodgerblue;
+}
+
+.wrapper {
+	width: 100%;
+	height: 100%;
+	display: flex;
+	justify-content: center;
+	align-items: center;
+}
+
+.content {
+	width: 100%;
+	max-width: 500px;
+	text-align: center;
+	padding: 40px 15px 50px 15px;
+	border-radius: 5px;
+	background-color: #fff;
+}
+
+h1,
+h2 {
+	font-weight: 500;
+}
+
+header {
+	display: flex;
+	margin-bottom: 10px;
+}
+
+.image-container {
+	flex-basis: 20%;
+}
+
+.welcome-container {
+	flex-basis: 60%;
+	justify-content: center;
+	padding-top: 10px;
+	margin-bottom: 10px;
+}
+
+img {
+	width: 80px;
+	height: 80px;
+}
+
+.login-form {
+	display: flex;
+	flex-direction: column;
+	align-items: center;
+}
+
+.input-group {
+	width: 100%;
+	max-width: 300px;
+	display: flex;
+	flex-direction: column;
+}
+
+/* Use of Descendant Selector */
+.input-group input:first-child {
+	margin-bottom: 10px;
+}
+
+input {
+	font-size: 14px;
+	padding: 15px;
+	border-radius: 5px;
+	border: 1px solid #e4eff8;
+	background-color: #e4eff8;
+}
+
+input:hover {
+	background-color: #d7e2ec;
+}
+
+.btn-group {
+	width: 100%;
+	max-width: 300px;
+	display: flex;
+	margin: 20px 0;
+}
+
+/* Use of Class Selector */
+.btn-group a {
+	width: 50%;
+	border-radius: 5px;
+	border: none;
+	text-decoration: none;
+}
+
+/* Use of Descendant Selector */
+.btn-group a input {
+	width: 100%;
+	height: 100%;
+	font-size: 16px;
+	cursor: pointer;
+	color: #ffffff;
+	text-align: center;
+	background-color: #1b9fd8;
+}
+
+/* Use of pseudo-class */
+.btn-group a input:hover {
+	background-color: #20bdff;
+}
+
+/* Use of an ID selector */
+#footer-link-pswrd {
+	color: #1b9fd8;
+	font-size: 14px;
+	font-weight: 700;
+}
+
+#footer-link-pswrd:hover {
+	color: #20bdff;
+}
+
+@media screen and (max-width: 720px) {
+	.content {
+		width: 70%;
+		padding-right: 0;
+		padding-left: 0;
+		margin: 0 10px;
+	}
+
+	img {
+		display: none;
+	}
 }
