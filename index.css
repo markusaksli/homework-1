@@ -1,5 +1,35 @@
-body {
-    background-color: dodgerblue;
+@import url('https://fonts.googleapis.com/css?family=Nunito');
 
+body {
+    height: 100vh;
+    font-family: 'Nunito', sans-serif;
+    background-color: dodgerblue;
+    margin: 0;
+    padding: 0;
+}
+header{
+    width: 100%;
+    top: 0;
+}
+
+nav {
+    display: flex;
+    background-color: #ffffff;
+}
+nav div{
+    height: 30px;
+    width: 100%;
+    padding: 10px;
+}
+nav div img {
+    height: 100%;
+}
+nav div.logo{
+    position: fixed;
+    right: 4px;
+    width: 40px;
+}
+nav div img.logo{
+    border-radius: 50%;
 }
 
