@@ -1,35 +1,102 @@
 @import url('https://fonts.googleapis.com/css?family=Nunito');
 
-body {
-    height: 100vh;
-    font-family: 'Nunito', sans-serif;
-    background-color: dodgerblue;
-    margin: 0;
-    padding: 0;
-}
-header{
-    width: 100%;
-    top: 0;
+* {
+    box-sizing: border-box;
 }
 
-nav {
-    display: flex;
+
+body {
+    margin: 0;
+    font-family: 'Nunito', sans-serif;
+    background-color: dodgerblue;
+}
+
+.wrapper {
+    margin: 0 auto;
     background-color: #ffffff;
+    height: 50px;
+    padding: 0;
+
 }
-nav div{
-    height: 30px;
+
+.feed-noneneed {
+    float: left;
+    width: 25%;
+    background-color: dodgerblue;
+    height: 100vh;
+
+}
+
+.feed-wrapper {
+    float: left;
+    width: 50%;
+    background-color: white;
+    height: 100vh;
+}
+
+.feed-container {
+
     width: 100%;
-    padding: 10px;
 }
-nav div img {
-    height: 100%;
+
+.mid-wrapper {
+    margin: 0 auto;
+
+
 }
-nav div.logo{
-    position: fixed;
-    right: 4px;
+
+header {
+    display: flex;
+    justify-content: space-between;
+    padding: 5px;
+
+
+}
+
+header img.logo {
+    padding: 5px;
     width: 40px;
+    height: 40px;
 }
-nav div img.logo{
+
+header img.profile {
+    width: 40px;
+    height: 40px;
+    padding: 5px;
     border-radius: 50%;
+
+
 }
+
+.search-container {
+    border: #dcdcdc;
+    border: 1px;
+
+
+}
+
+.search-container input[type=text] {
+    padding: 2px;
+    margin-top: 5px;
+    font-size: 20px;
+    width: 400px;
+    height: 40px;
+}
+
+.search-container button {
+    margin-top: 5px;
+    font-size: 15px;
+    float: right;
+    border: none;
+    background: #4169e1;
+    color: #ffffff;
+    padding: 4px;
+    width: 100px;
+    height: 40px;
+    border-top-right-radius: 10%;
+    border-bottom-right-radius: 10%;
+
+
+}
+
 
