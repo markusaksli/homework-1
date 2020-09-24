@@ -74,6 +74,7 @@ async function loadPosts() {
 
             return likeDiv
         }
+        //This loop creates the content
         for (let post of posts) {
             let postElement = document.createElement('div');
             postElement.className = 'post';
