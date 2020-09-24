@@ -94,7 +94,6 @@ async function loadPosts() {
 
             if (post.media) {
                 let execElement = re.exec(post.media)[1];
-                console.log(execElement === 'png' || execElement === 'jpg' || execElement === 'jpeg' || execElement === 'gif')
                 if (execElement === 'mp4') {
                     let media = document.createElement('video')
 
