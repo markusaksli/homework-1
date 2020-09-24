@@ -29,7 +29,7 @@ main {
 }
 
 .post-top {
-    padding:0 10px 30px;
+    padding: 0 10px 30px;
 }
 
 .post-top img {
@@ -56,13 +56,13 @@ main {
     margin: 20px 10px 40px;
 }
 
-.like{
+.like {
     display: inline-block;
     width: auto;
     margin-left: 10px;
 }
 
-.like-button{
+.like-button {
     width: 70px;
     height: 50px;
     padding: 0;
@@ -91,7 +91,7 @@ main {
     background-color: #7fdaff;
 }
 
-.like-counter{
+.like-counter {
     font-size: 16px;
     margin: auto;
     text-align: center;

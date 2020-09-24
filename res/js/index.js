@@ -32,7 +32,7 @@ async function loadPosts() {
                 let el = document.getElementById(`like-counter-${id}`)
                 if (this.id.split('-')[1] === 'disabled') {
                     el.innerHTML = (parseInt(el.innerHTML) - 1).toString()
-                    this.parentNode.animate([{backgroundColor: '#346bff'},{backgroundColor: '#ff3434'},{backgroundColor: '#e4eff8'}], 300)
+                    this.parentNode.animate([{backgroundColor: '#346bff'}, {backgroundColor: '#ff3434'}, {backgroundColor: '#e4eff8'}], 300)
                     this.parentNode.style.backgroundColor = '#e4eff8'
                     el.animate([
                         {color: '#ff3434', fontSize: '18px', fontWeight: 'bold'},
@@ -47,7 +47,7 @@ async function loadPosts() {
                     this.id = `like-button-${id}`
                 } else {
                     el.innerHTML = (parseInt(el.innerHTML) + 1).toString()
-                    this.parentNode.animate([{backgroundColor: '#e4eff8'},{backgroundColor: '#346bff'}], 200)
+                    this.parentNode.animate([{backgroundColor: '#e4eff8'}, {backgroundColor: '#346bff'}], 200)
                     this.parentNode.style.backgroundColor = '#346bff'
                     el.animate([
                         {color: '#000', fontSize: '16px'},

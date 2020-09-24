@@ -20,4 +20,3 @@ export async function getPosts() {
         new Post('res/media/motion.gif','something just set off my cameras??' , new Date())
     ]
 }
-
