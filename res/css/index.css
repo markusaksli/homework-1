@@ -78,7 +78,7 @@ main {
     outline: none;
     border-radius: 15px;
     border: 1px solid #e4eff8;
-    background: url('res/media/like.png') no-repeat center;
+    background: url('../media/like.png') no-repeat center;
     background-size: 50%;
 }
 
