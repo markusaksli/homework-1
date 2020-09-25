@@ -14,6 +14,7 @@ async function loadPosts() {
         const profileImg = function () {
             let img = document.createElement('img');
             img.src = 'res/media/profile.png'
+            img.className = 'img-profile'
             return img
         }
 
@@ -32,31 +33,43 @@ async function loadPosts() {
                 let el = document.getElementById(`like-counter-${id}`)
                 if (this.id.split('-')[1] === 'disabled') {
                     el.innerHTML = (parseInt(el.innerHTML) - 1).toString()
-                    this.parentNode.animate([{backgroundColor: '#346bff'}, {backgroundColor: '#ff3434'}, {backgroundColor: '#e4eff8'}], 300)
+
+                    this.parentNode.animate([{backgroundColor: '#1b9fd8'}, {backgroundColor: '#ff3434'}, {backgroundColor: '#e4eff8'}], 300)
                     this.parentNode.style.backgroundColor = '#e4eff8'
+
+                    this.animate([{filter: 'none'},{filter: 'invert()'}],200)
+                    this.style.filter = 'invert()'
+
                     el.animate([
-                        {color: '#ff3434', fontSize: '18px', fontWeight: 'bold'},
-                        {color: '#ff3434', fontSize: '22px', fontWeight: 'bold'},
-                        {color: '#000', fontSize: '16px', fontWeight: 'normal'},
+                        {color: '#ff3434', fontSize: '16px', fontWeight: '700'},
+                        {color: '#ff3434', fontSize: '20px'},
+                        {color: '#000', fontSize: '14px', fontWeight: '400'},
                     ], 300)
-                    el.style.fontSize = '16px'
+                    el.style.fontSize = '14px'
                     el.style.color = '#000'
-                    el.style.fontWeight = 'normal'
+                    el.style.fontWeight = '400'
+
                     this.blur()
 
                     this.id = `like-button-${id}`
                 } else {
                     el.innerHTML = (parseInt(el.innerHTML) + 1).toString()
-                    this.parentNode.animate([{backgroundColor: '#e4eff8'}, {backgroundColor: '#346bff'}], 200)
-                    this.parentNode.style.backgroundColor = '#346bff'
+
+                    this.parentNode.animate([{backgroundColor: '#e4eff8'}, {backgroundColor: 'dodgerblue'}], 200)
+                    this.parentNode.style.backgroundColor = 'dodgerblue'
+
+                    this.animate([{filter: 'invert()'},{filter: 'none'}],200)
+                    this.style.filter = 'none'
+
                     el.animate([
-                        {color: '#000', fontSize: '16px'},
-                        {color: '#346bff', fontSize: '22px', fontWeight: 'bold'},
-                        {color: '#346bff', fontSize: '18px', fontWeight: 'bold'},
+                        {color: '#000', fontSize: '14px'},
+                        {color: 'dodgerblue', fontSize: '20px', fontWeight: '700'},
+                        {color: 'dodgerblue', fontSize: '16px', fontWeight: '700'},
                     ], 200)
-                    el.style.fontSize = '18px'
-                    el.style.color = '#346bff'
-                    el.style.fontWeight = 'bold'
+                    el.style.fontSize = '16px'
+                    el.style.color = 'dodgerblue'
+                    el.style.fontWeight = '700'
+
                     this.blur()
 
                     this.id = `like-disabled-${id}`
