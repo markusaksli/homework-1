@@ -78,7 +78,6 @@ main {
 .like-button input {
     width: 100%;
     height: 100%;
-
     outline: none;
     border-radius: 15px;
     border: 1px solid #e4eff8;
@@ -101,60 +100,53 @@ main {
     text-align: center;
 }
 
-.wrapper {
-    margin: 0 auto;
-    background-color: #ffffff;
-    height: 50px;
-    padding: 0;
-}
-
 header {
-    display: flex;
-    justify-content: space-between;
-    padding: 5px;
-    border-radius: 0;
-    position: fixed;
-    top: 0;
     width: 100%;
+    height: 120px;
+    padding: 0 30px;
+    display: flex;
+    position: fixed;
+    align-items: center;
+    justify-content: space-between;
     background-color: #ffffff;
 }
 
-header img.logo {
-    padding: 5px;
-    width: 40px;
-    height: 40px;
+.img-logo, .img-profile {
+    width: 100px;
+    height: 100px;
 }
 
-header img.profile {
-    width: 40px;
-    height: 40px;
-    padding: 5px;
+.img-profile {
     border-radius: 50%;
 }
 
-.search-container{
-    border: 2px;
+.search-container {
+    flex-basis: 60%;
 }
 
 .search-container input[type=text] {
-    padding: 2px;
-    margin-top: 5px;
-    font-size: 20px;
-    width: 400px;
-    height: 40px;
-    border: thin solid gainsboro;;
+    width: 80%;
+    height: 80px;
+    padding: 20px;
+    font-size: 28px;
+    border: thin solid #dcdcdc;
+    background-color: rgb(245, 240, 240);
 }
 
 .search-container button {
-    margin-top: 5px;
-    font-size: 15px;
+    width: 20%;
+    height: 80px;
+    padding: 4px;
+    font-size: 28px;
+    font-weight: 500;
     float: right;
     border: none;
-    background: #4169e1;
     color: #ffffff;
-    padding: 4px;
-    width: 100px;
-    height: 40px;
-    border-top-right-radius: 10%;
-    border-bottom-right-radius: 10%;
+    background-color: #1e90ff;
+    border-top-right-radius: 5%;
+    border-bottom-right-radius: 5%;
+}
+
+.search-container button:hover {
+    background: rgb(0, 124, 248);
 }
