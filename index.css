@@ -114,31 +114,6 @@ main {
 
 }
 
-.feed-noneneed {
-    float: left;
-    width: 25%;
-    background-color: dodgerblue;
-    height: 100vh;
-
-}
-
-.feed-wrapper {
-    float: left;
-    width: 50%;
-    background-color: white;
-    height: 100vh;
-}
-
-.feed-container {
-
-    width: 100%;
-}
-
-.mid-wrapper {
-    margin: 0 auto;
-
-
-}
 
 header {
     display: flex;
