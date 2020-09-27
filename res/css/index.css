@@ -146,11 +146,8 @@ header {
     border: none;
     border-radius: 15%;
 
-    background-image: url('../media/like.png');
-    background-repeat: no-repeat;
-    background-position: center;
+    background: rgba(0, 0, 0, 0) url('../media/like.png') no-repeat center;
     background-size: 50%;
-    background-color: rgba(0, 0, 0, 0);
     filter: invert();
 }
 
@@ -164,9 +161,7 @@ header {
 }
 
 .like-counter {
-    font-family: 'Heebo', sans-serif;
-    font-size: 14px;
-    font-weight: 400;
+    font: 400 14px 'Heebo', sans-serif;
     margin: auto;
     text-align: center;
 }

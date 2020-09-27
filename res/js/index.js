@@ -37,7 +37,7 @@ async function loadPosts() {
                     this.parentNode.animate([{backgroundColor: '#1b9fd8'}, {backgroundColor: '#ff3434'}, {backgroundColor: '#e4eff8'}], 300)
                     this.parentNode.style.backgroundColor = '#e4eff8'
 
-                    this.animate([{filter: 'none'},{filter: 'invert()'}],200)
+                    this.animate([{filter: 'none'}, {filter: 'invert()'}], 200)
                     this.style.filter = 'invert()'
 
                     el.animate([
@@ -58,7 +58,7 @@ async function loadPosts() {
                     this.parentNode.animate([{backgroundColor: '#e4eff8'}, {backgroundColor: 'dodgerblue'}], 200)
                     this.parentNode.style.backgroundColor = 'dodgerblue'
 
-                    this.animate([{filter: 'invert()'},{filter: 'none'}],200)
+                    this.animate([{filter: 'invert()'}, {filter: 'none'}], 200)
                     this.style.filter = 'none'
 
                     el.animate([
