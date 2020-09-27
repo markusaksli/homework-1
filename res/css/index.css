@@ -1,6 +1,14 @@
 @import url('https://fonts.googleapis.com/css?family=Quicksand:400,500,600,700');
 @import url('https://fonts.googleapis.com/css?family=Heebo:400,700');
 
+* {
+    box-sizing: border-box;
+    scroll-behavior: smooth;
+    font-family: 'Quicksand', sans-serif;
+    -webkit-font-smoothing: antialiased;
+    -moz-osx-font-smoothing: grayscale;
+}
+
 body {
     margin: 0;
     background-color: dodgerblue;
@@ -12,10 +20,13 @@ html, body, main {
     overflow: auto;
 }
 
-* {
-    box-sizing: border-box;
-    font-family: 'Quicksand', sans-serif;
-    -webkit-font-smoothing: antialiased;
+main {
+    width: 60%;
+    margin: auto;
+    padding-top: 100px;
+    background-color: white;
+
+    box-shadow: 0 0 100px #2b2b2b;
 }
 
 /*Use flexbox to arrange layout*/
@@ -30,6 +41,7 @@ header {
     z-index: 3;
 
     background-color: #ffffff;
+    box-shadow: 0 0 15px #9b9b9b;
 }
 
 .search-container {
@@ -47,7 +59,9 @@ header {
 .search-container input[type=text] {
     width: 85%;
     height: 40px;
+
     font-size: 14px;
+    padding: 0 20px;
     border: thin solid #dcdcdc;
     background-color: white;
 }
@@ -73,20 +87,13 @@ header {
 }
 
 
-main {
-    width: 60%;
-    margin: auto;
-    padding-top: 100px;
-    background-color: white;
-}
-
 .post {
     display: block;
     width: 80%;
     padding: 10px 0;
-    margin: 30px auto;
+    margin: 35px auto;
     border-radius: 15px;
-    box-shadow: 0 0 20px gray;
+    box-shadow: 0 0 20px #9b9b9b;
 }
 
 .post-top {
@@ -143,7 +150,7 @@ main {
     background-repeat: no-repeat;
     background-position: center;
     background-size: 50%;
-    background-color: rgba(0,0,0,0);
+    background-color: rgba(0, 0, 0, 0);
     filter: invert();
 }
 
