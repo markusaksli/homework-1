@@ -100,7 +100,6 @@ async function loadPosts() {
             const mo = new Intl.DateTimeFormat('en', {month: 'short'}).format(d);
             const da = new Intl.DateTimeFormat('en', {day: '2-digit'}).format(d);
             let timeText = document.createElement('div')
-            timeText.className = 'time'
             timeText.append(`${mo}, ${da}, ${ye} ${d.getHours()}:${d.getMinutes().toString().length === 1 ? `0${d.getMinutes()}` : d.getMinutes()}`)
             topBar.appendChild(timeText)
             postElement.appendChild(topBar)
