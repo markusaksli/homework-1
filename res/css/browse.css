@@ -32,7 +32,7 @@ main{
     margin: auto;
     padding: 10px;
 
-    transition: all 0.5s;
+    transition: all 0.2s;
     border-radius: 4px;
     border: 2px solid #663399;
     text-align: center;
@@ -44,7 +44,18 @@ main{
     color: #FFFFFF;
 }
 
+.follow-button.follow:hover {
+    background-color: #8a5bbf;
+    border: 2px solid #8a5bbf;
+}
+
 .follow-button.followed {
     background-color: #FFFFFF;
     color: #663399;
+}
+
+.follow-button.followed:hover {
+    border: 2px solid #8a5bbf;
+    background-color: #eee5ff;
+    color: #8a5bbf;
 }
